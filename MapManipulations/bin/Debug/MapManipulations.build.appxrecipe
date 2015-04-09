@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DANEE-PC</Machine>
+    <WindowsUser>dani</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>405e4cf0-d69f-48e1-83ef-65406345090f</PackageIdentityName>
+    <IntermediateOutputPath>E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\bin\Debug\MapManipulations.exe">
+      <PackagePath>MapManipulations.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\bin\Debug\Routes.xbf">
+      <PackagePath>Routes.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\bin\Debug\MapManipulations.xr.xml">
+      <PackagePath>MapManipulations.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\ProgrammingProjects\Visual Studio 2013\Maps Learning\MapManipulations\MapManipulations\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

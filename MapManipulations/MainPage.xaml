@@ -1,0 +1,55 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MapManipulations"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="MapManipulations.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="Map Learnning" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBox Name="txtLocation" PlaceholderText="Enter Location" Margin="0,0,10,0" LostFocus="txtLocation_LostFocus" />
+        </StackPanel>
+
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <TextBlock Text="Location:" FontSize="16" Margin="0,0, 10,0"/>
+                    <TextBlock FontSize="16" Margin="10,0,0,0" x:Name="txtLatitude"/>
+                    <TextBlock FontSize="16" Margin="10,0,0,0" x:Name="txtLongitude"/>
+                </StackPanel>
+                <Maps:MapControl MapServiceToken="MsGYlEcnEQPqmp-NcdFVwA" 
+                                 MapTapped="myMap_MapTapped"
+                                 Name="myMap" Height="270" />
+                <StackPanel Orientation="Horizontal">
+                    <Button x:Name="btnGetCurrentLocation" Content="Current Location" Click="btnGetCurrentLocation_Click" Margin="0,0,10,0" />
+                    <Button x:Name="btnGotoCurrentLocation" Content="Empty" />
+                    <HyperlinkButton Margin="10,0,0,0" Content="L" Click="HyperlinkButton_Click" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:Name="btnZoomIn" Content="+"  Click="btnZoomIn_Click" Margin="0,0,10,0" />
+                    <Button x:Name="btnZoomOut" Content="-" Click="btnZoomOut_Click" />
+                </StackPanel>
+                <Slider Header="Zoom Level" Name="mySlider" Minimum="1" Maximum="50" Value="10" />
+                <Button Content="Routes" Click="Button_Click" HorizontalAlignment="Right" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
